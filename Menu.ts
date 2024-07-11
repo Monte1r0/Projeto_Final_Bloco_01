@@ -28,7 +28,7 @@ export function main() {
         console.log("            6️⃣  - Adicionar ao Estoque 📈             ");
         console.log("            5️⃣  - Remover Produto ❌                  ");
         console.log("            4️⃣  - Atualizar Produto ✏️               ");
-        console.log("            3️⃣  - Buscar Produto Pelo ID 🔍           ");
+        console.log("            3️⃣  - Buscar Produto 🔍           ");
         console.log("            2️⃣  - Ver Todos os Produtos 📋           ");
         console.log("            1️⃣  - Criar Produto 🎣                   ");
         console.log("                                                     ");
