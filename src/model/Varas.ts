@@ -4,12 +4,12 @@ export class Varas extends Produto{
     
     private _peso: number;
     private _fabricante: string;
-    private _material: number;
+    private _material: string;
     private _capacidadeKg: number;
 
 
 	constructor(numero: number, preco: number, id: number, tipo: number, nomeProduto: string, quantidade: number, descricaoProduto: string,
-                peso: number, fabricante: string, material: number, capacidadeKg: number) {
+                peso: number, fabricante: string, material: string, capacidadeKg: number) {
         super(numero, preco, id, tipo, nomeProduto, quantidade, descricaoProduto)
 		this._peso = peso;
 		this._fabricante = fabricante;
@@ -25,7 +25,7 @@ export class Varas extends Produto{
 		return this._fabricante;
 	}
 
-	public get material(): number {
+	public get material(): string {
 		return this._material;
 	}
 
@@ -41,7 +41,7 @@ export class Varas extends Produto{
 		this._fabricante = value;
 	}
 
-	public set material(value: number) {
+	public set material(value: string) {
 		this._material = value;
 	}
 
@@ -51,9 +51,9 @@ export class Varas extends Produto{
 
     public visualizar(){
         super.visualizar();
-        console.log(` Peso: ${this._peso}`);
-        console.log(` Fabricante: ${this._fabricante}`);
-        console.log(` Material: ${this._material}`);
-        console.log(` Capacidade KG: ${this._capacidadeKg}`);
+        console.log(`\nPeso: ${this._peso.toFixed(2)}Kg` );
+        console.log(`\nFabricante: ${this._fabricante}`);
+        console.log(`\nMaterial: ${this._material}`);
+        console.log(`\nCapacidade em Quilo Gramas que o produto suporta: ${this._capacidadeKg}Kg`);
     }
 }

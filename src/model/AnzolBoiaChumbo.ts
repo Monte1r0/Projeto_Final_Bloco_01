@@ -43,8 +43,8 @@ export class AnzolBoiaChumbo extends Produto{
 
     public visualizar(){
         super.visualizar();
-        console.log(`\nModelo. ${this._modelo}`);
+        console.log(`\nModelo: ${this._modelo}`);
         console.log(`\nProduto para pescar no:  ${this._lugar}`);
-        console.log(`\npeso. ${this._grama}`);
+        console.log(`\npeso em Gramas: ${this._grama}Gramas`);
     }
 }

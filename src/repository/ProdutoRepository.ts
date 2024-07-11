@@ -13,6 +13,6 @@ export interface ProdutoRepository{
 
 
     // Métodos Adicionais
-    incerir(numero: number, valor: number): void
+    inserir(numero: number, valor: number): void
     retirar(numero: number, valor: number): void;  
 }
